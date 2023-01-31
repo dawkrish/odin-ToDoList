@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+}
+html{
+    overflow: hidden;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EB455F;
+    padding: 8px;
+
+}
+
+img{
+    width: 30px;
+    height: 30px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    row-gap: 5px;
+    background-color: #FCFFE7;
+}
+
+.items{
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.items:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.1);
+}
+
+#right{
+    background-color: #E8E2E2;
+    padding: 20px;
+}
+
+.hide{
+    display: none !important;
+}
+
+.show{
+    display: block !important;
+}
+
+.grid-template{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+#form{
+    display: flex;
+    border: 2px solid #EB455F;
+    border-radius: 5px;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    padding-bottom: 5px;
+}
+#form-header{
+    height: 30px;
+    width: 100%;
+    background-color: #EB455F;
+}
+#close{
+    border: none;
+    background-color: inherit;
+    font-size: 15px;
+}
+#sumbit-btn{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 20%;
+    border: none;
+    padding-bottom: 5px;
+}
+form{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+#form-body{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.form-col{
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: start;
+}
+
+.task-row{
+    width: 80%;
+    display: grid;
+    font-size: larger;
+    grid-template-columns: 0.2fr 1fr 1fr 0.5fr 0.2fr 0.2fr;
+}
+
+
+.status{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 1px;
+    background-color: lightgrey;
+    top: 6px;
+}
+
+.remove{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    top: 6px;
+}
+
+.statusFalse{
+    background-color: lightgrey;
+}
+.statusTrue{
+    background-color: mediumaquamarine;
+}
